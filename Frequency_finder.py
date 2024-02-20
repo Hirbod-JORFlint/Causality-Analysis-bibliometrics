@@ -20,7 +20,7 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     df = pd.read_csv(filename)
 
     # Split the 'Keywords' column into a list of keywords and strip whitespaces
-    df[keyword_column] = df[keyword_column].str.split(separator).apply(lambda x: [word.strip() for word in x] if isinstance(x, list) else x)
+    df[keyword_column] = df[keyword_column].str.split(separator).apply(lambda x: [word.strip().lower() for word in x] if isinstance(x, list) else x)
 
     # Create a Counter object to count the co-occurrences
     co_occurrences = Counter()
@@ -39,7 +39,7 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
 df = pd.read_csv('diva_all.csv')
 
 # Split the 'Keywords' column into a list of keywords
-df['Keywords'] = df['Keywords'].str.split(';').apply(lambda x: [word.strip() for word in x] if isinstance(x, list) else x)
+df['Keywords'] = df['Keywords'].str.split(';').apply(lambda x: [word.strip().lower() for word in x] if isinstance(x, list) else x)
 
 # Create a Counter object to count the co-occurrences
 co_occurrences = Counter()
@@ -49,7 +49,7 @@ for keywords in df['Keywords']:
     # Check if keywords is a list before proceeding
     if isinstance(keywords, list):
         # Use combinations to find all pairs of keywords
-        for pair in combinations(keywords, 2):
+        for pair in combinations(keywords, 1):
             # Increment the count for this pair of keywords
             co_occurrences[pair] += 1
 
@@ -59,5 +59,5 @@ co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True
 print(co_occurrences[:10])
 
 # Co-occurrences with conditions
-co_occurrences_with_cond = [item for item in co_occurrences if "biofuel" in item[0]]
+co_occurrences_with_cond = [item for item in co_occurrences if "human-centered computing" in item[0]]
 print(co_occurrences_with_cond)
