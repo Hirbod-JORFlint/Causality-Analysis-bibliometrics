@@ -10,7 +10,7 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     filename (str): The name of the CSV file containing the dataset.
     keyword_column (str): The name of the column in the dataset that contains the keywords.
     separator (str): The character used to separate keywords in the keyword column.
-    A_num (int): The number of keywords to consider in each combination.
+    A_num (int): The number of keywords to consider in each combination(n_grams).
 
     Returns:
     list: A list of tuples where each tuple contains a combination of keywords and its count. 
@@ -53,9 +53,9 @@ for keywords in df['Keywords']:
     # Check if keywords is a list before proceeding
     if isinstance(keywords, list):
         # Use combinations to find all pairs of keywords
-        for pair in combinations(keywords, 3):
+        for comb in combinations(keywords, 3):
             # Increment the count for this pair of keywords
-            co_occurrences[pair] += 1
+            co_occurrences[frozenset(comb)] += 1
 
 # Convert the Counter object to a list of tuples and sort it
 co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True)
@@ -69,15 +69,45 @@ co_occurrences_with_cond = [item for item in co_occurrences if "human-centered c
 # Making Keyword list
 dd = df['Keywords'].tolist()
 
+# Finding Indices in any order
 # combination
-combination = ['industrial symbiosis', 'biogas', 'synergies']
+combination = set(['industrial symbiosis', 'synergies', 'biogas'])
 
-# Check if all elements of the combination exist in each row in the same order
-combination_exists = [all(item in sublist for item in combination) for sublist in dd]
+# Check if all elements of the combination exist in each row
+combination_exists = [combination.issubset(set(sublist)) if isinstance(sublist, list) else False for sublist in dd]
 
 # Get the indices where the combination exists
 indices = [i for i, x in enumerate(combination_exists) if x]
 
 # Print the indices
 print(indices)
+
+# If we were to go through each row multiple times
+# Iterate over each row
+for i, sublist in enumerate(dd):
+    # Check if sublist is a list before proceeding
+    if isinstance(sublist, list):
+        # Iterate over each combination in the row
+        for comb in combinations(sublist, 3):
+            # If the combination matches, store the index
+            if set(comb) == combination:
+                indices.append(i)
+
+# Print the indices
+print(indices)
+print(len(indices))
+
+# Finding Indices in the specific order(in 2-grams order does not matter)
+# combination
+combination = ['industrial symbiosis', 'synergies', 'biogas']
+
+# Check if all elements of the combination exist in each row in the same order[preventing the TypeError]
+combination_exists = [all(item in sublist for item in combination) if isinstance(sublist, list) else False for sublist in dd]
+
+# Get the indices where the combination exists
+indices = [i for i, x in enumerate(combination_exists) if x]
+
+# Print the indices
+print(indices)
+
 
