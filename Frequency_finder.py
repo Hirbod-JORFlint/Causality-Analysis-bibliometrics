@@ -38,8 +38,12 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
 
 df = pd.read_csv('diva_all.csv')
 
+# Keywords counting in data
+df['Keyword_count'] = df['Keywords'].str.split(';').apply(lambda x: len(x) if isinstance(x, list) else 0)
+
 # Split the 'Keywords' column into a list of keywords
 df['Keywords'] = df['Keywords'].str.split(';').apply(lambda x: [word.strip().lower() for word in x] if isinstance(x, list) else x)
+
 
 # Create a Counter object to count the co-occurrences
 co_occurrences = Counter()
@@ -49,15 +53,31 @@ for keywords in df['Keywords']:
     # Check if keywords is a list before proceeding
     if isinstance(keywords, list):
         # Use combinations to find all pairs of keywords
-        for pair in combinations(keywords, 1):
+        for pair in combinations(keywords, 3):
             # Increment the count for this pair of keywords
             co_occurrences[pair] += 1
 
 # Convert the Counter object to a list of tuples and sort it
 co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True)
 
-print(co_occurrences[:10])
+print(co_occurrences[:5])
 
 # Co-occurrences with conditions
 co_occurrences_with_cond = [item for item in co_occurrences if "human-centered computing" in item[0]]
-print(co_occurrences_with_cond)
+#print(co_occurrences_with_cond)
+
+# Making Keyword list
+dd = df['Keywords'].tolist()
+
+# combination
+combination = ['industrial symbiosis', 'biogas', 'synergies']
+
+# Check if all elements of the combination exist in each row in the same order
+combination_exists = [all(item in sublist for item in combination) for sublist in dd]
+
+# Get the indices where the combination exists
+indices = [i for i, x in enumerate(combination_exists) if x]
+
+# Print the indices
+print(indices)
+
