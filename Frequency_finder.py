@@ -26,15 +26,17 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     co_occurrences = Counter()
 
     # Use list comprehension to find all pairs of keywords and increment their count
-    co_occurrences.update(pair for keywords in df[keyword_column] if isinstance(keywords, list) for pair in combinations(keywords, A_num))
+    co_occurrences.update(tuple(sorted(comb)) for keywords in df[keyword_column] if isinstance(keywords, list) for comb in combinations(set(keywords), A_num))
+
 
     # Convert the Counter object to a list of tuples and sort it
     co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True)
 
-    return co_occurrences[:100]
+    return co_occurrences
 
-#top_100 = investigate_cooccurrence('diva_all.csv', 'Keywords', ';', 2)
-#print(top_100)
+
+top_100 = investigate_cooccurrence('diva_all.csv', 'Keywords', ';', 2)
+print(top_100[:20])
 
 df = pd.read_csv('diva_all.csv')
 
@@ -50,12 +52,9 @@ co_occurrences = Counter()
 
 # Iterate over the 'Keywords' column
 for keywords in df['Keywords']:
-    # Check if keywords is a list before proceeding
     if isinstance(keywords, list):
-        # Use combinations to find all pairs of keywords
-        for comb in combinations(keywords, 3):
-            # Increment the count for this pair of keywords
-            co_occurrences[frozenset(comb)] += 1
+        for comb in combinations(set(keywords), 3):
+            co_occurrences.update([tuple(sorted(comb))])
 
 # Convert the Counter object to a list of tuples and sort it
 co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True)
@@ -71,7 +70,7 @@ dd = df['Keywords'].tolist()
 
 # Finding Indices in any order
 # combination
-combination = set(['industrial symbiosis', 'synergies', 'biogas'])
+combination = set(['recognition of prior learning', 'validation', 'validering'])
 
 # Check if all elements of the combination exist in each row
 combination_exists = [combination.issubset(set(sublist)) if isinstance(sublist, list) else False for sublist in dd]
@@ -81,6 +80,22 @@ indices = [i for i, x in enumerate(combination_exists) if x]
 
 # Print the indices
 print(indices)
+print(len(indices))
+
+
+# Finding Indices in the specific order(in 2-grams order does not matter)
+# combination
+combination = ['recognition of prior learning', 'validation', 'validering']
+
+# Check if all elements of the combination exist in each row in the same order[preventing the TypeError]
+combination_exists = [all(item in sublist for item in combination) if isinstance(sublist, list) else False for sublist in dd]
+
+# Get the indices where the combination exists
+indices = [i for i, x in enumerate(combination_exists) if x]
+
+# Print the indices
+print(indices)
+
 
 # If we were to go through each row multiple times
 # Iterate over each row
@@ -96,18 +111,3 @@ for i, sublist in enumerate(dd):
 # Print the indices
 print(indices)
 print(len(indices))
-
-# Finding Indices in the specific order(in 2-grams order does not matter)
-# combination
-combination = ['industrial symbiosis', 'synergies', 'biogas']
-
-# Check if all elements of the combination exist in each row in the same order[preventing the TypeError]
-combination_exists = [all(item in sublist for item in combination) if isinstance(sublist, list) else False for sublist in dd]
-
-# Get the indices where the combination exists
-indices = [i for i, x in enumerate(combination_exists) if x]
-
-# Print the indices
-print(indices)
-
-
