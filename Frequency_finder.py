@@ -84,7 +84,7 @@ print(len(indices))
 
 
 # Finding Indices in the specific order(in 2-grams order does not matter)
-# combination
+# combination5
 combination = ['recognition of prior learning', 'validation', 'validering']
 
 # Check if all elements of the combination exist in each row in the same order[preventing the TypeError]

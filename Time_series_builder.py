@@ -1,7 +1,22 @@
 import pandas as pd
 from statsmodels.tsa.stattools import grangercausalitytests
+from statsmodels.tsa.stattools import adfuller
 
-
+# Function for performing Augmented Dickey-Fuller
+def perform_adf_test(series):
+    result = adfuller(series)
+    print('ADF Statistic: %f' % result[0])
+    print('p-value: %f' % result[1])
+    print('Critical Values:')
+    for key, value in result[4].items():
+        print('\t%s: %.3f' % (key, value))
+    
+    # Print the conclusion based on the p-value
+    if result[1] < 0.05:
+        print("Conclusion: The series is stationary")
+    else:
+        print("Conclusion: The series is not stationary")
+        
 #loading the Dset
 time_df = pd.read_csv('diva_all.csv')
 
@@ -45,11 +60,19 @@ df_new.to_csv('time_series.csv')  # replace with your desired output filename
 print("The new dataframe was successfully created and saved as new_file.csv.")
 print(df_new)
 
-
-# Perform the Granger causality test for each pair of columns
-# Set 'Year' as the index
+# Set 'Year' as the index if int is not already.
 
 #df_new.set_index('Year', inplace=True)
+
+# Perform ADF test on each column
+for column in df_new.columns:
+    print(f"\nPerforming ADF test on column: {column}")
+    perform_adf_test(df_new[column])
+
+print(0+'r')
+
+# Perform the Granger causality test for each pair of columns
+
 
 for keyword1 in df_new.columns:
     for keyword2 in df_new.columns:
