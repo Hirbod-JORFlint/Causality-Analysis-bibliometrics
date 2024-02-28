@@ -35,7 +35,7 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     return co_occurrences
 
 
-top_100 = investigate_cooccurrence('diva_all.csv', 'Keywords', ';', 2)
+top_100 = investigate_cooccurrence('diva_all.csv', 'Keywords', ';', 1)
 print(top_100[:20])
 
 df = pd.read_csv('diva_all.csv')
