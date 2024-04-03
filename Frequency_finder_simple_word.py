@@ -35,10 +35,18 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     return co_occurrences
 
 
-top_100 = investigate_cooccurrence('diva_all.csv', 'Keywords', ';', 3)
-print(top_100[:20])
+def extract_unique_keywords(data):
+    keywords = set()
+    for item in data:
+        keywords.update(item[0])
+    return list(keywords)
 
-df = pd.read_csv('diva_all.csv')
+
+top_100 = investigate_cooccurrence('updated_file.csv', 'Keywords', ';', 1)
+print(top_100[:50])
+print(extract_unique_keywords(top_100[:50]))
+
+df = pd.read_csv('updated_file.csv')
 
 # Keywords counting in data
 df['Keyword_count'] = df['Keywords'].str.split(';').apply(lambda x: len(x) if isinstance(x, list) else 0)
@@ -59,7 +67,7 @@ for keywords in df['Keywords']:
 # Convert the Counter object to a list of tuples and sort it
 co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True)
 
-print(co_occurrences[:5])
+#print(co_occurrences[:5])
 
 # Co-occurrences with conditions
 co_occurrences_with_cond = [item for item in co_occurrences if "human-centered computing" in item[0]]
@@ -79,8 +87,8 @@ combination_exists = [combination.issubset(set(sublist)) if isinstance(sublist, 
 indices = [i for i, x in enumerate(combination_exists) if x]
 
 # Print the indices
-print(indices)
-print(len(indices))
+#print(indices)
+#print(len(indices))
 
 
 # Finding Indices in the specific order(in 2-grams order does not matter)
@@ -109,8 +117,8 @@ for i, sublist in enumerate(dd):
                 indices.append(i)
 
 # Print the indices
-print(indices)
-print(len(indices))
+#print(indices)
+#print(len(indices))
 
 
 
