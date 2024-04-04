@@ -18,12 +18,16 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     co_occurrences = Counter()
     co_occurrences.update(tuple(sorted(comb)) for keywords in df[keyword_column] if isinstance(keywords, tuple) for comb in combinations(set(keywords), A_num))
     co_occurrences = sorted(co_occurrences.items(), key=lambda x: x[1], reverse=True)
-
+    co_occurrences = co_occurrences[:80]
+    print(co_occurrences)
     # Create an empty Bayesian Network
     bn = gum.BayesNet('Bayes')
 
     # Add nodes to the network
-    unique_keywords = list(set(itertools.chain.from_iterable(keywords for keywords in df[keyword_column] if isinstance(keywords, tuple))))
+    # depending on the definition of unique_keywords the allocation might become impossible,
+    # the code is modified to only consider the top
+    unique_keywords = list(set(itertools.chain.from_iterable(keywords for keywords, _ in co_occurrences)))
+    print(unique_keywords)
     bn_list = []
     for keyword in unique_keywords:
         var = gum.LabelizedVariable(keyword, keyword, 2)
@@ -31,11 +35,11 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
         var.changeLabel(1, 'state_1')
         bn_list.append(bn.add(var))
 
+
     # Add edges based on the co-occurrences
     edges = [(a, b) for (a, b), _ in co_occurrences]
     for edge in edges:
         bn.addArc(bn.idFromName(edge[0]), bn.idFromName(edge[1]))
-
     # Prepare the data for the model
     data = pd.DataFrame(0, index=np.arange(len(df)), columns=unique_keywords)
     for index, row in df.iterrows():
@@ -52,7 +56,7 @@ def investigate_cooccurrence(filename, keyword_column, separator, A_num):
     bn = learner.learnBN()
 
     # Print the learned Bayesian Network
-    gnb.showBN(bn)
+    #gnb.showBN(bn)
 
     return bn, co_occurrences
 

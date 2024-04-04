@@ -42,9 +42,11 @@ def extract_unique_keywords(data):
     return list(keywords)
 
 
-top_100 = investigate_cooccurrence('MIT.csv', 'Keywords', ';', 3)
-print(top_100[:50])
-print(extract_unique_keywords(top_100[:50]))
+top_100 = investigate_cooccurrence('MIT.csv', 'Keywords', ';', 2)
+print(len(top_100))
+print(top_100[:220])
+print(extract_unique_keywords(top_100[:200]))
+print(len(extract_unique_keywords(top_100[:80])))
 ex = extract_unique_keywords(top_100)
 print('vuxnas lärande' in ex)
 
