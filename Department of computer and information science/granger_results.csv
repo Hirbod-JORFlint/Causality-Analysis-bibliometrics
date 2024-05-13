@@ -1,0 +1,31 @@
+Keywords1,Keywords2,lag1,lag2,lag3,lag4,lag5
+qos,real-time system,0.3529,0.0178,0.1248,0.093,0.0877
+bullying,moral disengagement,0.0112,0.2007,0.6155,0.0001,0.0004
+sdn,security,0.4092,0.4255,0.0625,0.0822,0.1314
+modeling,simulation,0.238,0.0021,0.0196,0.0636,0.0535
+soc,system-on-chip,0.1227,0.0017,0,0,0
+computer communication networks,computer science,0.0248,0.1032,0.2397,0.3191,0.0017
+hip,security,0.1556,0.0281,0.0359,0.0075,0.0451
+privacy,security,0.7034,0.4742,0.112,0.0821,0.0562
+declarative programming,program correctness,0.1494,0.3574,0.051,0.0229,0.0275
+parallel computing,software composition,0.5756,0.5193,0.6126,0.2023,0.0312
+control system,propagation,0.633,0.7763,0.035,0.6528,0.6047
+modeling,petri nets,0.8588,0.5894,0.7413,0.9097,0.9298
+bullying,bystander,0.1026,0.0561,0.0024,0,0.0003
+declarative programming,logic programming,0.8164,0.4913,0.6526,0.8289,0.6712
+control system,safety-critical,0.6339,0.7773,0.0351,0.6518,0.6029
+design optimization,fault tolerance,0.3353,0.0122,0.0487,0.0885,0.0798
+plm,product lifecycle management,0.2308,0.9312,0.2105,0.0144,0.029
+java,security,0.0012,0.0021,0.0056,0.0004,0.0028
+datavetenskap,festskrift,0.106,0.2844,0.4185,0.6232,0.7837
+propagation,safety-critical,0.4163,0.3814,0.5889,0.7072,0.3707
+design for testability,testing,0.231,0.0727,0.1822,0.3179,0.7008
+formal verification,real-time systems,0.2162,0.4428,0.4522,0.5102,0.781
+formal verification,modeling,0.182,0.4617,0.5187,0.6169,0.5411
+computer science,festskrift,0.9255,0.2117,0.4056,0.6031,0.3108
+bullying,classroom climate,0.2004,0.1036,0.2709,0.0058,0.0004
+computer science,datavetenskap,0.9843,0.9756,0.9949,0.997,0.8706
+bullying,victimization,0.2167,0.0001,0,0,0.0002
+logic programming,program correctness,0.5593,0.8508,0.9098,0.0342,0.0675
+multicore processor,parallel computing,0.0082,0.0114,0.0095,0.011,0.1457
+fault tolerance,middleware,0.0558,0.045,0.0326,0.0134,0.0055

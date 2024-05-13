@@ -9,8 +9,9 @@ def contains_target_numbers(row):
     numbers = eval(row['Numbers'])
     # Check if '###' or '###' is in the list
     #Department of math
-    return '307' in numbers or '11103' in numbers or '11104' in numbers or '2328' in numbers or '2327' in numbers or '884511' in numbers or '2326' in numbers or '2329' in numbers
-
+    #return '307' in numbers or '11103' in numbers or '11104' in numbers or '2328' in numbers or '2327' in numbers or '884511' in numbers or '2326' in numbers or '2329' in numbers
+    #Media and information tech
+    return '6850' in numbers
 # Apply the function to each row
 df['ContainsTargetNumbers'] = df.apply(contains_target_numbers, axis=1)
 
@@ -18,4 +19,4 @@ df['ContainsTargetNumbers'] = df.apply(contains_target_numbers, axis=1)
 df = df[df['ContainsTargetNumbers']]
 
 # Save the filtered dataframe to a new CSV file
-df.to_csv('math.csv', index=False)
+df.to_csv('MIT.csv', index=False)

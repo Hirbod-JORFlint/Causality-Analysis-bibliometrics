@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                 -0.0408211
+Nobs:                     16.0000    HQIC:                  -1.04873
+Log likelihood:          -14.5810    FPE:                   0.618578
+AIC:                     -1.10313    Det(Omega_mle):        0.217223
+--------------------------------------------------------------------
+Results for equation collisionless plasma
+==========================================================================================
+                             coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------
+const                          -0.410349         0.254453           -1.613           0.107
+L1.collisionless plasma        -2.710700         0.706153           -3.839           0.000
+L1.pic simulation               0.868082         0.281321            3.086           0.002
+L2.collisionless plasma        -3.972958         0.994430           -3.995           0.000
+L2.pic simulation               1.721845         0.399249            4.313           0.000
+L3.collisionless plasma        -3.268935         1.272041           -2.570           0.010
+L3.pic simulation               2.512373         0.760241            3.305           0.001
+L4.collisionless plasma        -1.896682         0.711039           -2.667           0.008
+L4.pic simulation               2.423510         0.841808            2.879           0.004
+L5.collisionless plasma         0.042441         0.726742            0.058           0.953
+L5.pic simulation               1.129349         0.739982            1.526           0.127
+==========================================================================================
+
+Results for equation pic simulation
+==========================================================================================
+                             coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------
+const                          -0.157157         0.705812           -0.223           0.824
+L1.collisionless plasma        -3.596655         1.958758           -1.836           0.066
+L1.pic simulation               1.031469         0.780339            1.322           0.186
+L2.collisionless plasma        -4.924519         2.758391           -1.785           0.074
+L2.pic simulation               1.361201         1.107452            1.229           0.219
+L3.collisionless plasma        -5.307969         3.528440           -1.504           0.132
+L3.pic simulation               3.062921         2.108789            1.452           0.146
+L4.collisionless plasma        -3.670219         1.972311           -1.861           0.063
+L4.pic simulation               3.567017         2.335043            1.528           0.127
+L5.collisionless plasma        -1.375072         2.015867           -0.682           0.495
+L5.pic simulation               1.944185         2.052592            0.947           0.344
+==========================================================================================
+
+Correlation matrix of residuals
+                        collisionless plasma  pic simulation
+collisionless plasma                1.000000        0.848157
+pic simulation                      0.848157        1.000000
+
+

@@ -2,6 +2,27 @@ from statsmodels.tsa.stattools import grangercausalitytests
 from statsmodels.tsa.stattools import adfuller
 import pandas as pd
 
+import sys
+
+# Get a list of all currently loaded modules
+loaded_modules = list(sys.modules.keys())
+
+print("Loaded modules:")
+for module in loaded_modules:
+    print(module)
+
+# If you want to remove a module, you can use del
+# Be careful with this, as it could break your program if you delete a needed module
+for module in loaded_modules:
+    if module not in ['__main__', 'sys']:  # Don't remove main or sys
+        del sys.modules[module]
+
+# Verify the modules have been removed
+print("\nModules after deletion:")
+for module in list(sys.modules.keys()):
+    print(module)
+
+
 df_new = pd.read_csv('time_series.csv')
 # Function for performing Augmented Dickey-Fuller
 def perform_adf_test(series):

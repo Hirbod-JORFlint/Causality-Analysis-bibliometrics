@@ -1,0 +1,48 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                    1.42356
+Nobs:                     17.0000    HQIC:                  0.629024
+Log likelihood:          -34.8452    FPE:                    2.18364
+AIC:                     0.541329    Det(Omega_mle):        0.933537
+--------------------------------------------------------------------
+Results for equation evaluation
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                0.220215         0.325390            0.677           0.499
+L1.evaluation                       -1.245297         0.350602           -3.552           0.000
+L1.information visualization         0.176955         0.236129            0.749           0.454
+L2.evaluation                       -1.106878         0.534090           -2.072           0.038
+L2.information visualization        -0.203348         0.291391           -0.698           0.485
+L3.evaluation                       -1.224082         0.549773           -2.227           0.026
+L3.information visualization         0.412868         0.314154            1.314           0.189
+L4.evaluation                       -0.821290         0.360453           -2.278           0.023
+L4.information visualization        -0.538955         0.258536           -2.085           0.037
+===============================================================================================
+
+Results for equation information visualization
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                0.994901         0.450997            2.206           0.027
+L1.evaluation                       -0.373576         0.485941           -0.769           0.442
+L1.information visualization         0.745315         0.327279            2.277           0.023
+L2.evaluation                       -1.058073         0.740258           -1.429           0.153
+L2.information visualization        -0.503886         0.403874           -1.248           0.212
+L3.evaluation                       -1.844192         0.761996           -2.420           0.016
+L3.information visualization         0.619814         0.435423            1.423           0.155
+L4.evaluation                       -1.085726         0.499595           -2.173           0.030
+L4.information visualization        -0.882986         0.358335           -2.464           0.014
+===============================================================================================
+
+Correlation matrix of residuals
+                             evaluation  information visualization
+evaluation                     1.000000                   0.350989
+information visualization      0.350989                   1.000000
+
+

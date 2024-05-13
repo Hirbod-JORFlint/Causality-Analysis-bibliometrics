@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     10:18:51
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -1.05298
+Nobs:                     17.0000    HQIC:                  -2.02407
+Log likelihood:          -8.12823    FPE:                   0.194251
+AIC:                     -2.13126    Det(Omega_mle):       0.0716054
+--------------------------------------------------------------------
+Results for equation information visualization
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                1.047296         0.656940            1.594           0.111
+L1.information visualization         0.661990         0.311644            2.124           0.034
+L1.large eddy simulation            -5.588690         3.723419           -1.501           0.133
+L2.information visualization        -0.900637         0.437510           -2.059           0.040
+L2.large eddy simulation            -3.306824         4.261081           -0.776           0.438
+L3.information visualization         0.810375         0.669285            1.211           0.226
+L3.large eddy simulation             0.090402         3.229090            0.028           0.978
+L4.information visualization         0.971421         1.283242            0.757           0.449
+L4.large eddy simulation            -0.590496         2.293722           -0.257           0.797
+L5.information visualization         2.743785         1.230254            2.230           0.026
+L5.large eddy simulation            -1.341280         1.159430           -1.157           0.247
+===============================================================================================
+
+Results for equation large eddy simulation
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                               -0.048515         0.125778           -0.386           0.700
+L1.information visualization         0.057965         0.059667            0.971           0.331
+L1.large eddy simulation            -0.026207         0.712887           -0.037           0.971
+L2.information visualization        -0.140652         0.083766           -1.679           0.093
+L2.large eddy simulation             0.458656         0.815828            0.562           0.574
+L3.information visualization         0.476763         0.128141            3.721           0.000
+L3.large eddy simulation            -0.688725         0.618242           -1.114           0.265
+L4.information visualization         0.060278         0.245690            0.245           0.806
+L4.large eddy simulation             0.465759         0.439157            1.061           0.289
+L5.information visualization        -0.021313         0.235545           -0.090           0.928
+L5.large eddy simulation            -0.208554         0.221985           -0.939           0.347
+===============================================================================================
+
+Correlation matrix of residuals
+                             information visualization  large eddy simulation
+information visualization                     1.000000              -0.073182
+large eddy simulation                        -0.073182               1.000000
+
+

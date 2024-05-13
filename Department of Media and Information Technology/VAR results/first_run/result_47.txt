@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -2.06569
+Nobs:                     16.0000    HQIC:                  -3.07360
+Log likelihood:           1.61794    FPE:                  0.0816594
+AIC:                     -3.12800    Det(Omega_mle):       0.0286760
+--------------------------------------------------------------------
+Results for equation augmented reality
+=======================================================================================
+                          coefficient       std. error           t-stat            prob
+---------------------------------------------------------------------------------------
+const                        0.312782         0.313149            0.999           0.318
+L1.augmented reality        -1.239296         0.568681           -2.179           0.029
+L1.user-perspective          1.582495         1.503370            1.053           0.293
+L2.augmented reality        -1.831338         0.853718           -2.145           0.032
+L2.user-perspective          0.114183         1.286374            0.089           0.929
+L3.augmented reality        -1.355259         1.072894           -1.263           0.207
+L3.user-perspective         -1.178519         1.206090           -0.977           0.328
+L4.augmented reality        -0.834924         0.744376           -1.122           0.262
+L4.user-perspective         -2.425158         1.327257           -1.827           0.068
+L5.augmented reality         0.150362         0.494385            0.304           0.761
+L5.user-perspective         -1.061286         1.628761           -0.652           0.515
+=======================================================================================
+
+Results for equation user-perspective
+=======================================================================================
+                          coefficient       std. error           t-stat            prob
+---------------------------------------------------------------------------------------
+const                        0.096955         0.090505            1.071           0.284
+L1.augmented reality        -0.006637         0.164357           -0.040           0.968
+L1.user-perspective          0.376949         0.434496            0.868           0.386
+L2.augmented reality        -0.173181         0.246737           -0.702           0.483
+L2.user-perspective          0.367855         0.371781            0.989           0.322
+L3.augmented reality        -0.279061         0.310082           -0.900           0.368
+L3.user-perspective         -0.091815         0.348578           -0.263           0.792
+L4.augmented reality        -0.298266         0.215136           -1.386           0.166
+L4.user-perspective         -0.244295         0.383597           -0.637           0.524
+L5.augmented reality         0.094103         0.142885            0.659           0.510
+L5.user-perspective         -0.601841         0.470736           -1.279           0.201
+=======================================================================================
+
+Correlation matrix of residuals
+                     augmented reality  user-perspective
+augmented reality             1.000000          0.543335
+user-perspective              0.543335          1.000000
+
+

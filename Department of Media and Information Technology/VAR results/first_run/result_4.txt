@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:33
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                  -0.119897
+Nobs:                     16.0000    HQIC:                  -1.12781
+Log likelihood:          -13.9484    FPE:                   0.571547
+AIC:                     -1.18221    Det(Omega_mle):        0.200708
+--------------------------------------------------------------------
+Results for equation interaction design
+========================================================================================
+                           coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------
+const                         0.248770         0.375306            0.663           0.507
+L1.interaction design        -0.801625         0.490286           -1.635           0.102
+L1.machine learning           0.144343         0.601308            0.240           0.810
+L2.interaction design         0.441050         0.443459            0.995           0.320
+L2.machine learning          -0.108132         0.596594           -0.181           0.856
+L3.interaction design        -0.037720         0.516206           -0.073           0.942
+L3.machine learning           0.141676         0.502683            0.282           0.778
+L4.interaction design        -1.049011         1.031528           -1.017           0.309
+L4.machine learning          -0.295252         0.444520           -0.664           0.507
+L5.interaction design        -1.181096         0.672406           -1.757           0.079
+L5.machine learning           0.217448         0.610340            0.356           0.722
+========================================================================================
+
+Results for equation machine learning
+========================================================================================
+                           coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------
+const                         0.306340         0.229391            1.335           0.182
+L1.interaction design         0.288538         0.299669            0.963           0.336
+L1.machine learning          -1.794547         0.367527           -4.883           0.000
+L2.interaction design         0.553482         0.271048            2.042           0.041
+L2.machine learning          -1.335842         0.364645           -3.663           0.000
+L3.interaction design         1.728354         0.315512            5.478           0.000
+L3.machine learning          -0.547047         0.307246           -1.780           0.075
+L4.interaction design         2.644534         0.630482            4.194           0.000
+L4.machine learning          -0.270768         0.271696           -0.997           0.319
+L5.interaction design         1.182609         0.410983            2.878           0.004
+L5.machine learning           0.886954         0.373047            2.378           0.017
+========================================================================================
+
+Correlation matrix of residuals
+                      interaction design  machine learning
+interaction design              1.000000          0.598311
+machine learning                0.598311          1.000000
+
+

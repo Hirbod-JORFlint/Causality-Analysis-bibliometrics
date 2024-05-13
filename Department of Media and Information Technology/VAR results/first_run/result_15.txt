@@ -1,0 +1,48 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:33
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                    1.21622
+Nobs:                     17.0000    HQIC:                  0.421693
+Log likelihood:          -33.0829    FPE:                    1.77475
+AIC:                     0.333998    Det(Omega_mle):        0.758733
+--------------------------------------------------------------------
+Results for equation human-centered computing
+==============================================================================================
+                                 coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------------
+const                               0.252997         0.287478            0.880           0.379
+L1.human-centered computing         0.354770         0.359016            0.988           0.323
+L1.visualization                   -0.242754         0.108987           -2.227           0.026
+L2.human-centered computing        -0.574697         0.288882           -1.989           0.047
+L2.visualization                   -0.283675         0.270714           -1.048           0.295
+L3.human-centered computing         1.260281         0.337702            3.732           0.000
+L3.visualization                   -0.042050         0.298237           -0.141           0.888
+L4.human-centered computing        -0.216078         0.801970           -0.269           0.788
+L4.visualization                    0.199743         0.218710            0.913           0.361
+==============================================================================================
+
+Results for equation visualization
+==============================================================================================
+                                 coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------------
+const                               1.720409         0.611510            2.813           0.005
+L1.human-centered computing        -0.546547         0.763681           -0.716           0.474
+L1.visualization                   -1.995545         0.231832           -8.608           0.000
+L2.human-centered computing         2.005166         0.614496            3.263           0.001
+L2.visualization                   -2.471696         0.575850           -4.292           0.000
+L3.human-centered computing         2.278228         0.718343            3.172           0.002
+L3.visualization                   -1.706467         0.634395           -2.690           0.007
+L4.human-centered computing         4.587877         1.705912            2.689           0.007
+L4.visualization                   -0.462935         0.465230           -0.995           0.320
+==============================================================================================
+
+Correlation matrix of residuals
+                            human-centered computing  visualization
+human-centered computing                    1.000000       0.078179
+visualization                               0.078179       1.000000
+
+

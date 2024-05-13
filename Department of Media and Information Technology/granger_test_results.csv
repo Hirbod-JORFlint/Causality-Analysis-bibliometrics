@@ -1,0 +1,31 @@
+,Keywords1,Keywords2,lag1,lag2,lag3,lag4,lag5
+0,shading,shadowing,0.3447,0.5488,0.4064,0.5302,0.7616
+1,visualization,visualization design and evaluation methods,0.4794,0.0044,0.1296,0.1474,0.4449
+2,ellipses,torchlight,0.2067,0.324,0.4519,0.3442,0.4123
+3,computers and society,multimedia systems,0.4715,0.1417,0.2099,0.2695,0.5412
+4,authentic learning,technology education,0.0104,0.074,0.1846,0.0253,0.0
+5,information visualization,visualization,0.2719,0.4866,0.6509,0.3306,0.4868
+6,computer science,multimedia systems,0.9604,0.782,0.8569,0.9359,0.9571
+7,ellipses,plane estimation,0.5016,0.1674,0.0373,0.0312,0.0488
+8,multimedia information systems,user interfaces and human computer interaction,0.0008,0.035,0.0643,0.1582,0.0539
+9,color prediction,dot gain,0.3281,0.5548,0.0311,0.2516,0.2573
+10,scientific visualization,visualization,0.0001,0.0014,0.0116,0.0261,0.0736
+11,computer science,computers and society,0.9524,0.7951,0.2562,0.2544,0.5582
+12,cancer,pathology,0.5676,0.6518,0.5749,0.4129,0.4299
+13,computer science,multimedia information systems,0.0467,0.8003,0.9393,0.4517,0.3742
+14,evolution,threshold concepts,0.6274,0.9458,0.9629,0.934,0.9776
+15,computers and society,multimedia information systems,0.0046,0.0001,0.0011,0.002,0.0221
+16,active illumination,ellipses,0.7024,0.9239,0.4819,0.7082,0.2929
+17,geovisual analytics,storytelling,0.3426,0.5058,0.7388,0.8995,0.254
+18,active illumination,torchlight,0.2526,0.6309,0.4151,0.0689,0.2562
+19,evolution,visualization,0.2103,0.496,0.6953,0.8785,0.8839
+20,multimedia systems,user interfaces and human computer interaction,0.2041,0.1308,0.1495,0.3086,0.5485
+21,life science,visualization,0.4985,0.781,0.7988,0.9119,0.9776
+22,computers and society,user interfaces and human computer interaction,0.8239,0.8805,0.9652,0.9815,0.9888
+23,plane estimation,torchlight,0.9274,0.4479,0.6039,0.4863,0.6719
+24,technology education,technology teachers,0.6748,0.369,0.1572,0.2922,0.0
+25,graininess,multi-channel printing,0.0,0.0,0.0,0.0,0.0
+26,computational fluid dynamics,magnetic resonance imaging,0.1946,0.1177,0.0015,0.0167,0.0647
+27,multimedia information systems,multimedia systems,0.0008,0.0364,0.1096,0.4364,0.734
+28,computer science,user interfaces and human computer interaction,0.9652,0.7746,0.0172,0.0574,0.1714
+29,active illumination,plane estimation,0.063,0.1748,0.341,0.1385,0.0577

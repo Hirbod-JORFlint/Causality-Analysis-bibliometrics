@@ -1,0 +1,44 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:33
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -1.04817
+Nobs:                     18.0000    HQIC:                  -1.64519
+Log likelihood:          -21.4157    FPE:                   0.191231
+AIC:                     -1.74068    Det(Omega_mle):       0.0991342
+--------------------------------------------------------------------
+Results for equation information visualization
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                0.621429         0.403732            1.539           0.124
+L1.information visualization         0.633929         0.312458            2.029           0.042
+L1.text visualization                3.110714         1.332672            2.334           0.020
+L2.information visualization        -0.541667         0.344752           -1.571           0.116
+L2.text visualization               -6.929167         2.780546           -2.492           0.013
+L3.information visualization         0.175595         0.312458            0.562           0.574
+L3.text visualization               23.658333         9.054573            2.613           0.009
+===============================================================================================
+
+Results for equation text visualization
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                0.114286         0.095928            1.191           0.234
+L1.information visualization        -0.035714         0.074241           -0.481           0.630
+L1.text visualization                1.957143         0.316648            6.181           0.000
+L2.information visualization         0.000000         0.081914            0.000           1.000
+L2.text visualization               -6.850000         0.660668          -10.368           0.000
+L3.information visualization        -0.035714         0.074241           -0.481           0.630
+L3.text visualization               19.600000         2.151401            9.110           0.000
+===============================================================================================
+
+Correlation matrix of residuals
+                             information visualization  text visualization
+information visualization                     1.000000            0.369819
+text visualization                            0.369819            1.000000
+
+

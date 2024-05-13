@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -1.06155
+Nobs:                     16.0000    HQIC:                  -2.06946
+Log likelihood:          -6.41518    FPE:                   0.222894
+AIC:                     -2.12386    Det(Omega_mle):       0.0782728
+--------------------------------------------------------------------
+Results for equation digital pathology
+=======================================================================================
+                          coefficient       std. error           t-stat            prob
+---------------------------------------------------------------------------------------
+const                        0.144349         0.142453            1.013           0.311
+L1.digital pathology        -0.233624         0.467704           -0.500           0.617
+L1.machine learning          0.149014         0.109782            1.357           0.175
+L2.digital pathology        -0.783973         0.295068           -2.657           0.008
+L2.machine learning          0.174867         0.170863            1.023           0.306
+L3.digital pathology         0.075099         0.360551            0.208           0.835
+L3.machine learning          0.317703         0.197199            1.611           0.107
+L4.digital pathology        -1.586422         0.313419           -5.062           0.000
+L4.machine learning          0.131988         0.228863            0.577           0.564
+L5.digital pathology         0.546871         0.923511            0.592           0.554
+L5.machine learning          0.225797         0.377309            0.598           0.550
+=======================================================================================
+
+Results for equation machine learning
+=======================================================================================
+                          coefficient       std. error           t-stat            prob
+---------------------------------------------------------------------------------------
+const                        0.450528         0.329665            1.367           0.172
+L1.digital pathology        -1.360678         1.082359           -1.257           0.209
+L1.machine learning         -1.322859         0.254058           -5.207           0.000
+L2.digital pathology        -2.858254         0.682846           -4.186           0.000
+L2.machine learning         -0.874360         0.395412           -2.211           0.027
+L3.digital pathology         0.181744         0.834387            0.218           0.828
+L3.machine learning          0.767555         0.456358            1.682           0.093
+L4.digital pathology        -3.406322         0.725313           -4.696           0.000
+L4.machine learning          1.112329         0.529634            2.100           0.036
+L5.digital pathology         6.125057         2.137187            2.866           0.004
+L5.machine learning          4.013476         0.873168            4.596           0.000
+=======================================================================================
+
+Correlation matrix of residuals
+                     digital pathology  machine learning
+digital pathology             1.000000          0.151258
+machine learning              0.151258          1.000000
+
+

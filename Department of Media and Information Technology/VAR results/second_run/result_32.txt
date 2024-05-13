@@ -1,0 +1,48 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     10:18:52
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -70.3124
+Nobs:                     18.0000    HQIC:                  -71.0800
+Log likelihood:           607.743    FPE:                1.45445e-31
+AIC:                     -71.2027    Det(Omega_mle):     6.46421e-32
+--------------------------------------------------------------------
+Results for equation turbulent kinetic energy
+==========================================================================================================================
+                                                       coefficient       std. error                 t-stat            prob
+--------------------------------------------------------------------------------------------------------------------------
+const                                                    -0.000000         0.000000                 -0.332           0.740
+L1.turbulent kinetic energy                              -2.000000         0.000000  -1020273614309325.500           0.000
+L1.user interfaces and human computer interaction         1.000000         0.000000   1185894222877058.500           0.000
+L2.turbulent kinetic energy                              -0.000000         0.000000                 -0.588           0.556
+L2.user interfaces and human computer interaction        -0.000000         0.000000                 -0.193           0.847
+L3.turbulent kinetic energy                               0.000000         0.000000                  0.391           0.696
+L3.user interfaces and human computer interaction         1.000000         0.000000   1011798652071795.750           0.000
+L4.turbulent kinetic energy                               0.000000         0.000000                  0.000           1.000
+L4.user interfaces and human computer interaction         1.000000         0.000000    565093492462570.250           0.000
+==========================================================================================================================
+
+Results for equation user interfaces and human computer interaction
+====================================================================================================================
+                                                       coefficient       std. error           t-stat            prob
+--------------------------------------------------------------------------------------------------------------------
+const                                                     0.100000         0.100000            1.000           0.317
+L1.turbulent kinetic energy                              -3.500000         0.771002           -4.540           0.000
+L1.user interfaces and human computer interaction         1.900000         0.331662            5.729           0.000
+L2.turbulent kinetic energy                              -0.100000         0.556776           -0.180           0.857
+L2.user interfaces and human computer interaction        -0.400000         0.452155           -0.885           0.376
+L3.turbulent kinetic energy                               0.000000         0.447214            0.000           1.000
+L3.user interfaces and human computer interaction         0.800000         0.388730            2.058           0.040
+L4.turbulent kinetic energy                              -0.100000         0.331662           -0.302           0.763
+L4.user interfaces and human computer interaction         1.800000         0.696020            2.586           0.010
+====================================================================================================================
+
+Correlation matrix of residuals
+                                                  turbulent kinetic energy  user interfaces and human computer interaction
+turbulent kinetic energy                                          1.000000                                        0.000000
+user interfaces and human computer interaction                    0.000000                                        1.000000
+
+

@@ -1,0 +1,100 @@
+,Keywords1,Keywords2,lag1,lag2,lag3,lag4,lag5
+0,threshold concepts,natural selection,0.5912,0.6392,0.7131,0.9377,0.4712
+1,natural selection,evolution,0.852,0.0028,0.0049,0.0002,0.0
+2,volumetric ambient occlusion,shadowing,0.7469,0.9135,0.9631,0.9797,0.9926
+3,visualization,conceptual understanding,0.0692,0.002,0.1079,0.0317,0.0706
+4,single point active alignment method,calibration,0.0,0.0,0.0,0.0,0.0
+5,pathfinding,artificial intelligence,0.5051,0.4893,0.7411,0.8918,0.8757
+6,volumetric ambient occlusion,emissive tissues,0.8738,0.8884,0.9885,0.9984,0.9996
+7,direct linear transform,calibration,0.7639,0.2593,0.0,0.0,0.0
+8,emotions,artificial intelligence,0.5188,0.6339,0.8397,0.9752,0.9816
+9,multivariate,flow mapping,0.4466,0.67,0.4233,0.6262,0.8344
+10,pathology,lymph nodes,0.6765,0.9916,0.9399,0.8497,0.5646
+11,computers and society,computer science,0.0103,0.0,0.0004,0.0035,0.0208
+12,domain shift,deep learning,0.0552,0.3015,0.0415,0.0,0.0
+13,optical dot gain,color print reproduction,0.8928,0.0,0.0003,0.0052,0.0247
+14,tone mapping,high dynamic range imaging,0.1192,0.2144,0.3028,0.6059,0.8542
+15,visualization,life science,0.7355,0.8429,0.7944,0.5046,0.2219
+16,effective coverage map,color prediction,0.0,0.0,0.0,0.0,0.0
+17,large eddy simulation,computational fluid dynamics,0.095,0.6484,0.0,0.0,0.0
+18,children,adolescents,0.2862,0.1239,0.3025,0.704,0.4983
+19,multimedia information systems,computers and society,0.0008,0.0367,0.0521,0.0774,0.261
+20,magnetic resonance imaging,large eddy simulation,0.8195,0.0077,0.0002,0.004,0.0457
+21,evolution,conceptual understanding,0.8474,0.8847,0.3878,0.3334,0.2168
+22,effective coverage map,dot gain,0.1388,0.0677,0.0,0.0,0.0
+23,visualization,molecular life science,0.908,0.9614,0.7988,0.863,0.9129
+24,plane estimation,ellipses,0.7799,0.7647,0.763,0.8888,0.9265
+25,spatio-temporal data,geovisual analytics,0.5784,0.1681,0.1366,0.0676,0.176
+26,medical visualization,local illumination,0.1994,0.6226,0.79,0.2396,0.0
+27,web-enable visualization,geovisual analytics,0.6532,0.0441,0.0064,0.0,0.0
+28,information visualization,human-automation collaboration,0.0326,0.1125,0.2884,0.3352,0.3642
+29,media design,computers and society,0.0008,0.0361,0.0946,0.3562,0.6797
+30,visualization,science education research,0.6754,0.9102,0.9579,0.9186,0.956
+31,geovisual analytics,flow mapping,0.1122,0.089,0.0594,0.0519,0.0017
+32,user interfaces and human computer interaction,media design,0.0046,0.0001,0.0007,0.0114,0.0364
+33,visualization,scientific visualization,0.0157,0.0176,0.0387,0.186,0.1081
+34,shading,medical visualization,0.3469,0.6464,0.6883,0.0197,0.097
+35,storytelling,geovisual analytics,0.3777,0.7725,0.8784,0.963,0.0
+36,shading,emissive tissues,0.5433,0.2674,0.4651,0.6836,0.7605
+37,safety ii,resilience,0.7525,0.8836,0.0499,0.1904,0.4901
+38,visualization,information visualization,0.5236,0.4973,0.7992,0.966,0.9449
+39,threshold concepts,evolution,0.8246,0.9404,0.9026,0.9728,0.6099
+40,turbulent kinetic energy,computational fluid dynamics,0.2746,0.0312,0.0148,0.1169,0.3737
+41,multimedia systems,media design,0.0047,0.0001,0.0005,0.0066,0.0593
+42,volumetric ambient occlusion,shading,0.6856,0.8934,0.951,0.9832,0.9926
+43,visualization,protein-ligand docking,0.9529,0.7794,0.6952,0.7328,0.7115
+44,virtual treatment,large eddy simulation,0.0,0.0,0.0,0.0,0.0
+45,user interfaces and human computer interaction,computer science,0.0099,0.0,0.0003,0.0033,0.0197
+46,dot gain,color prediction,0.5626,0.0021,0.0033,0.0345,0.1916
+47,ellipses,active illumination,0.3612,0.7324,0.558,0.351,0.4119
+48,colon,cancer,0.3011,0.8963,0.9207,0.9818,0.7707
+49,technology education,attitudes,0.4632,0.7326,0.0329,0.0,0.0062
+50,behavior networks,artificial intelligence,0.5031,0.4889,0.7408,0.8905,0.8722
+51,user interfaces and human computer interaction,multimedia information systems,0.0046,0.0001,0.0005,0.0077,0.0788
+52,multimedia systems,computer science,0.01,0.0,0.0003,0.0041,0.0366
+53,spatio-temporal data,multivariate,0.896,0.9783,0.9935,0.9969,0.9974
+54,shadowing,medical visualization,0.7323,0.8872,0.9804,0.1111,0.156
+55,web-enabled visualization toolkit,geovisual analytics,0.0422,0.413,0.4708,0.0,0.0
+56,web-enable visualization,multivariate,0.8783,0.7626,0.8171,0.8846,0.8473
+57,pathology,cancer,0.6666,0.9891,0.083,0.1023,0.1002
+58,shadowing,emissive tissues,0.1954,0.6163,0.7847,0.882,0.8737
+59,multimedia systems,multimedia information systems,0.0046,0.0001,0.0004,0.0028,0.0432
+60,volumetric ambient occlusion,local illumination,0.665,0.4796,0.6172,0.7289,0.8992
+61,multivariate,geovisual analytics,0.6567,0.0453,0.0067,0.0,0.0
+62,visualization,evolution,0.5493,0.8786,0.6348,0.9,0.6742
+63,torchlight,ellipses,0.4734,0.2886,0.4479,0.689,0.8172
+64,plane estimation,active illumination,0.1793,0.574,0.7081,0.7037,0.5713
+65,multimedia information systems,media design,0.6001,0.3671,0.2454,0.3444,0.5275
+66,visual literacy,external representations,0.7826,0.9462,0.9836,0.9928,0.7598
+67,multi-channel printing,graininess,0.0067,0.1376,0.1866,0.0747,0.172
+68,technology teachers,technology education,0.6188,0.8228,0.929,0.9818,0.9645
+69,head-mounted display,direct linear transform,0.2222,0.5108,0.366,0.4293,0.5238
+70,visualization,computer graphics,0.4387,0.389,0.4329,0.6612,0.8011
+71,multimedia information systems,computer science,0.0209,0.036,0.1283,0.426,0.4576
+72,torchlight,plane estimation,0.634,0.762,0.9099,0.9583,0.97
+73,situation awareness,resilience,0.0893,0.0152,0.0694,0.2476,0.5199
+74,local illumination,emissive tissues,0.3558,0.5492,0.6839,0.5943,0.8428
+75,technology education,authentic learning,0.5285,0.3921,0.0173,0.0,0.0042
+76,magnetic resonance imaging,computational fluid dynamics,0.0004,0.0084,0.0009,0.0098,0.0712
+77,lymph nodes,cancer,0.2995,0.9624,0.7856,0.8149,0.7177
+78,medical visualization,emissive tissues,0.1983,0.6221,0.7887,0.2398,0.0
+79,video see-through,user-perspective,0.0398,0.0209,0.0933,0.1134,0.2372
+80,spatio-temporal data,flow mapping,0.8841,0.9768,0.9933,0.9971,0.9974
+81,volumetric ambient occlusion,medical visualization,0.7482,0.9131,0.9635,0.1892,0.0
+82,media design,computer science,0.0206,0.0361,0.071,0.2791,0.3544
+83,web-enable visualization,flow mapping,0.9949,0.8636,0.0049,0.0069,0.0649
+84,pathology,colon,0.6793,0.7097,0.8247,0.9371,0.6576
+85,voyage analysis,geovisual analytics,0.1923,0.0987,0.1553,0.4607,0.0
+86,shadowing,shading,0.7803,0.9377,0.5541,0.6514,0.8704
+87,shading,local illumination,0.5461,0.2699,0.4692,0.6876,0.7608
+88,visualization,interaction techniques,0.2013,0.5425,0.472,0.703,0.8176
+89,user interfaces and human computer interaction,computers and society,0.8907,0.701,0.4508,0.5937,0.3752
+90,web-enable visualization,spatio-temporal data,0.8354,0.9485,0.9797,0.9896,0.9925
+91,visualization design and evaluation methods,visualization,0.0162,0.0363,0.0453,0.0316,0.2001
+92,torchlight,active illumination,0.6359,0.1479,0.2666,0.332,0.5552
+93,user interfaces and human computer interaction,multimedia systems,0.863,0.5182,0.72,0.6316,0.6616
+94,image based lighting,high dynamic range video,0.8296,0.9349,0.7358,0.5446,0.7995
+95,multimedia systems,computers and society,0.2703,0.39,0.4263,0.4913,0.5944
+96,head-mounted display,calibration,0.7599,0.2608,0.0,0.0,0.0
+97,web-enabled visualization toolkit,storytelling,0.2096,0.2136,0.2313,0.4704,0.5145
+98,shadowing,local illumination,0.1982,0.6209,0.7877,0.8826,0.8709

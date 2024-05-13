@@ -41,13 +41,26 @@ def extract_unique_keywords(data):
         keywords.update(item[0])
     return list(keywords)
 
+# Find the last index of a number for co_occurrence
+def find_last_index(sorted_list, number):
+    for i in reversed(range(len(sorted_list))):
+        if sorted_list[i][1] == number:
+            return i
+    return -1
 
-top_100 = investigate_cooccurrence('MIT.csv', 'Keywords', ';', 3)
-print(top_100[:50])
-print(extract_unique_keywords(top_100[:50]))
+
+top_100 = investigate_cooccurrence('IDA.csv', 'Keywords', ';', 1)
+print(find_last_index(top_100, 2))
+
+print(len(top_100))
+print(top_100[:220])
+print(extract_unique_keywords(top_100[:200]))
+print(len(extract_unique_keywords(top_100[:80])))
 ex = extract_unique_keywords(top_100)
 print('vuxnas lärande' in ex)
 
+coe_set = list([tuple(sorted(pair)) for pair, _ in top_100[:7]])
+reversed_coe = [(b, a) for a, b in coe_set]
 #df = pd.read_csv('updated_file.csv')
 
 # Keywords counting in data

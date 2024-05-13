@@ -42,11 +42,15 @@ def extract_unique_keywords(data):
     return list(keywords)
 
 
-top_100 = investigate_cooccurrence('updated_file.csv', 'Keywords', ';', 1)
-print(top_100[:50])
-print(extract_unique_keywords(top_100[:50]))
+top_100 = investigate_cooccurrence('final_df_processed.csv', 'Keywords', ';', 1)
+print(len(top_100))
+print(top_100[:220])
+print(extract_unique_keywords(top_100[:220]))
+print(len(extract_unique_keywords(top_100[:80])))
+ex = extract_unique_keywords(top_100)
+print('vuxnas lärande' in ex)
 
-df = pd.read_csv('updated_file.csv')
+#df = pd.read_csv('updated_file.csv')
 
 # Keywords counting in data
 df['Keyword_count'] = df['Keywords'].str.split(';').apply(lambda x: len(x) if isinstance(x, list) else 0)

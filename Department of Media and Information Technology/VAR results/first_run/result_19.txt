@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:33
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -38.6238
+Nobs:                     16.0000    HQIC:                  -39.6317
+Log likelihood:           294.083    FPE:                1.08395e-17
+AIC:                     -39.6861    Det(Omega_mle):         0.00000
+--------------------------------------------------------------------
+Results for equation technology education
+==========================================================================================
+                             coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------
+const                           0.142857         0.156492            0.913           0.361
+L1.technology education         0.265135  12368305.848183            0.000           1.000
+L1.technology teachers          0.592008  12368305.848183            0.000           1.000
+L2.technology education        -0.304783   4638114.693069           -0.000           1.000
+L2.technology teachers          1.896791   7730191.155115            0.000           1.000
+L3.technology education         0.710951  35558879.313527            0.000           1.000
+L3.technology teachers         -1.079295  15460382.310229           -0.000           1.000
+L4.technology education        -0.914348  13914344.079206           -0.000           1.000
+L4.technology teachers          1.670106  58749452.778870            0.000           1.000
+L5.technology education         1.725488  20098497.003298            0.000           1.000
+L5.technology teachers         -1.641033  52565299.854779           -0.000           1.000
+==========================================================================================
+
+Results for equation technology teachers
+==========================================================================================
+                             coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------
+const                           0.142857         0.156492            0.913           0.361
+L1.technology education        -0.019265  12368305.848183           -0.000           1.000
+L1.technology teachers         -0.123592  12368305.848183           -0.000           1.000
+L2.technology education        -0.010633   4638114.693069           -0.000           1.000
+L2.technology teachers         -0.112960   7730191.155115           -0.000           1.000
+L3.technology education        -0.033900  35558879.313527           -0.000           1.000
+L3.technology teachers         -0.059795  15460382.310229           -0.000           1.000
+L4.technology education        -0.031899  13914344.079206           -0.000           1.000
+L4.technology teachers         -0.055793  58749452.778870           -0.000           1.000
+L5.technology education        -0.049162  20098497.003298           -0.000           1.000
+L5.technology teachers          0.025268  52565299.854779            0.000           1.000
+==========================================================================================
+
+Correlation matrix of residuals
+                        technology education  technology teachers
+technology education                1.000000             1.000000
+technology teachers                 1.000000             1.000000
+
+

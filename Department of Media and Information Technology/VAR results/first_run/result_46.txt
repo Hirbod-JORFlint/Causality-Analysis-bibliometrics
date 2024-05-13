@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -66.5635
+Nobs:                     16.0000    HQIC:                  -67.5714
+Log likelihood:           517.600    FPE:                7.96109e-30
+AIC:                     -67.6258    Det(Omega_mle):     2.79566e-30
+--------------------------------------------------------------------
+Results for equation authentic learning
+==============================================================================================
+                             coefficient       std. error               t-stat            prob
+----------------------------------------------------------------------------------------------
+const                           0.000000         0.000000                0.022           0.982
+L1.authentic learning          -1.696313         0.000000        -30801972.078           0.000
+L1.technology education         0.000000         0.000000                0.231           0.817
+L2.authentic learning          -1.287097         0.000000        -41178077.858           0.000
+L2.technology education         2.000000         0.000000  350198419357287.375           0.000
+L3.authentic learning           1.402765         0.000000         11493312.764           0.000
+L3.technology education         2.392627         0.000000         21722879.520           0.000
+L4.authentic learning           2.511521         0.000000         84368618.168           0.000
+L4.technology education        -2.122120         0.000000       -285150448.927           0.000
+L5.authentic learning           0.729493         0.000000          6203949.486           0.000
+L5.technology education        -4.181567         0.000000        -87793674.456           0.000
+==============================================================================================
+
+Results for equation technology education
+==========================================================================================
+                             coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------
+const                           0.142857         0.156492            0.913           0.361
+L1.authentic learning          -1.599638   5646357.179894           -0.000           1.000
+L1.technology education         0.857143         0.442627            1.936           0.053
+L2.authentic learning           1.690553   3204689.210210            0.000           1.000
+L2.technology education         1.000000         0.585540            1.708           0.088
+L3.authentic learning           0.512772  12513548.344630            0.000           1.000
+L3.technology education         0.342133  11292714.359788            0.000           1.000
+L4.authentic learning           2.077024   3052084.962105            0.000           1.000
+L4.technology education        -3.266458    763021.240527           -0.000           1.000
+L5.authentic learning           0.352897  12055735.600314            0.000           1.000
+L5.technology education        -0.133904   4883335.939368           -0.000           1.000
+==========================================================================================
+
+Correlation matrix of residuals
+                        authentic learning  technology education
+authentic learning                1.000000              0.000000
+technology education              0.000000              1.000000
+
+

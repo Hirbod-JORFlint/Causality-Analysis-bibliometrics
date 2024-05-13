@@ -1,0 +1,40 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                    2.28409
+Nobs:                     19.0000    HQIC:                   1.87114
+Log likelihood:          -60.8963    FPE:                    6.12498
+AIC:                      1.78701    Det(Omega_mle):         3.83874
+--------------------------------------------------------------------
+Results for equation information visualization
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                0.824244         0.392119            2.102           0.036
+L1.information visualization         0.521294         0.297257            1.754           0.079
+L1.visual analytics                  0.108544         0.221732            0.490           0.624
+L2.information visualization        -0.510730         0.299866           -1.703           0.089
+L2.visual analytics                  0.146592         0.276753            0.530           0.596
+===============================================================================================
+
+Results for equation visual analytics
+===============================================================================================
+                                  coefficient       std. error           t-stat            prob
+-----------------------------------------------------------------------------------------------
+const                                0.712304         0.512675            1.389           0.165
+L1.information visualization        -0.031799         0.388648           -0.082           0.935
+L1.visual analytics                  0.177714         0.289903            0.613           0.540
+L2.information visualization        -0.359814         0.392059           -0.918           0.359
+L2.visual analytics                 -0.687904         0.361839           -1.901           0.057
+===============================================================================================
+
+Correlation matrix of residuals
+                             information visualization  visual analytics
+information visualization                     1.000000          0.584673
+visual analytics                              0.584673          1.000000
+
+

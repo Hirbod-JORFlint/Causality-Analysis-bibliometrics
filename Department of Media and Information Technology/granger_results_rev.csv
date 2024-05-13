@@ -1,0 +1,31 @@
+Keywords1,Keywords2,lag1,lag2,lag3,lag4,lag5
+shadowing,shading,0.7767,0.9359,0.5611,0.6579,0.8777
+computers and society,computer science,0.0101,0,0.0002,0.0028,0.0176
+multimedia information systems,computer science,0.0207,0.0366,0.1315,0.4216,0.3356
+visualization,scientific visualization,0.0156,0.0176,0.0388,0.1869,0.1067
+plane estimation,ellipses,0.7671,0.8766,0.9506,0.9825,0.9876
+user interfaces and human computer interaction,multimedia systems,0.9898,0.7251,0.8292,0.7266,0.8627
+technology teachers,technology education,0.6215,0.8262,0.9311,0.9827,0.3084
+threshold concepts,evolution,0.8242,0.9393,0.9019,0.9722,0.3737
+visualization,life science,0.7351,0.8437,0.795,0.5064,0.2217
+user interfaces and human computer interaction,multimedia information systems,0.0046,0.0001,0.001,0.0143,0.0776
+multimedia information systems,computers and society,0.0008,0.0363,0.1329,0.2066,0.1572
+plane estimation,active illumination,0.2913,0.435,0.6768,0.7885,0.6719
+pathology,cancer,0.6466,0.1016,0.2146,0.4492,0.4815
+user interfaces and human computer interaction,computer science,0.0098,0,0.0006,0.0049,0.0404
+ellipses,active illumination,0.9806,0.9795,0.8869,0.9533,0.9597
+visualization design and evaluation methods,visualization,0.0162,0.0363,0.0735,0.0637,0.2813
+visualization,evolution,0.5494,0.8776,0.634,0.8995,0.6723
+multimedia systems,multimedia information systems,0.0046,0.0001,0.0009,0.0132,0.0118
+magnetic resonance imaging,computational fluid dynamics,0.0004,0.0083,0.0009,0.0093,0.0828
+torchlight,ellipses,0.4749,0.5109,0.046,0.0514,0.1091
+torchlight,active illumination,0.041,0.0289,0.0626,0.1819,0.1457
+multimedia systems,computer science,0.0104,0,0.0006,0.0081,0.0588
+multi-channel printing,graininess,0.0061,0.0846,0.2681,0.223,0.1052
+torchlight,plane estimation,0.8777,0.8797,0.9828,0.989,0.9013
+technology education,authentic learning,0.5282,0.3937,0.0167,0,0.002
+visualization,information visualization,0.5242,0.4986,0.7994,0.9662,0.9453
+user interfaces and human computer interaction,computers and society,0.3268,0.5344,0.2774,0.5022,0.0573
+storytelling,geovisual analytics,0.3788,0.7735,0.8795,0.9634,0
+dot gain,color prediction,0.5657,0.0022,0.0034,0.0232,0.0937
+multimedia systems,computers and society,0.0344,0.0784,0.1183,0.1492,0.3688

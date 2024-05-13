@@ -1,0 +1,48 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     10:18:51
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -2.40199
+Nobs:                     18.0000    HQIC:                  -3.16959
+Log likelihood:          -3.45053    FPE:                  0.0452688
+AIC:                     -3.29236    Det(Omega_mle):       0.0201195
+--------------------------------------------------------------------
+Results for equation lymph nodes
+================================================================================================
+                                   coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------------
+const                                -0.025191         0.092484           -0.272           0.785
+L1.lymph nodes                        0.510723         0.128023            3.989           0.000
+L1.magnetic resonance imaging         0.177782         0.123059            1.445           0.149
+L2.lymph nodes                       -0.239021         0.135991           -1.758           0.079
+L2.magnetic resonance imaging         0.109056         0.153592            0.710           0.478
+L3.lymph nodes                        0.124615         0.135991            0.916           0.359
+L3.magnetic resonance imaging        -0.832120         0.153592           -5.418           0.000
+L4.lymph nodes                       -0.034732         0.128023           -0.271           0.786
+L4.magnetic resonance imaging         0.883664         0.123059            7.181           0.000
+================================================================================================
+
+Results for equation magnetic resonance imaging
+================================================================================================
+                                   coefficient       std. error           t-stat            prob
+------------------------------------------------------------------------------------------------
+const                                 0.314695         0.250496            1.256           0.209
+L1.lymph nodes                       -0.152272         0.346755           -0.439           0.661
+L1.magnetic resonance imaging         0.811539         0.333309            2.435           0.015
+L2.lymph nodes                       -0.091363         0.368336           -0.248           0.804
+L2.magnetic resonance imaging        -0.082321         0.416009           -0.198           0.843
+L3.lymph nodes                       -0.091363         0.368336           -0.248           0.804
+L3.magnetic resonance imaging        -0.317615         0.416009           -0.763           0.445
+L4.lymph nodes                       -0.152272         0.346755           -0.439           0.661
+L4.magnetic resonance imaging        -0.011990         0.333309           -0.036           0.971
+================================================================================================
+
+Correlation matrix of residuals
+                              lymph nodes  magnetic resonance imaging
+lymph nodes                      1.000000                   -0.420456
+magnetic resonance imaging      -0.420456                    1.000000
+
+

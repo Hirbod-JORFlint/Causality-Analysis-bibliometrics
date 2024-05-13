@@ -1,0 +1,48 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     10:18:52
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -69.7760
+Nobs:                     18.0000    HQIC:                  -70.5436
+Log likelihood:           602.915    FPE:                2.48682e-31
+AIC:                     -70.6664    Det(Omega_mle):     1.10525e-31
+--------------------------------------------------------------------
+Results for equation single point active alignment method
+==========================================================================================================
+                                             coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------------------------
+const                                           0.200000         0.200000            1.000           0.317
+L1.single point active alignment method        -0.100000         0.331662           -0.302           0.763
+L1.situation awareness                          0.200000         1.685230            0.119           0.906
+L2.single point active alignment method        -0.200000         0.916515           -0.218           0.827
+L2.situation awareness                         -0.200000         1.113553           -0.180           0.857
+L3.single point active alignment method         0.000000         0.632456            0.000           1.000
+L3.situation awareness                         -0.000000         0.894427           -0.000           1.000
+L4.single point active alignment method        -0.200000         1.280625           -0.156           0.876
+L4.situation awareness                         -0.200000         0.663325           -0.302           0.763
+==========================================================================================================
+
+Results for equation situation awareness
+===============================================================================================================
+                                             coefficient       std. error                t-stat            prob
+---------------------------------------------------------------------------------------------------------------
+const                                           0.000000         0.000000                 2.018           0.044
+L1.single point active alignment method         0.500000         0.000000  1813856777541927.500           0.000
+L1.situation awareness                         -0.000000         0.000000                -0.198           0.843
+L2.single point active alignment method        -0.000000         0.000000                -0.255           0.799
+L2.situation awareness                         -0.000000         0.000000                -0.240           0.810
+L3.single point active alignment method         0.500000         0.000000   951194518799686.250           0.000
+L3.situation awareness                         -0.000000         0.000000                -0.523           0.601
+L4.single point active alignment method         0.500000         0.000000   469761489194658.125           0.000
+L4.situation awareness                          0.000000         0.000000                 0.302           0.763
+===============================================================================================================
+
+Correlation matrix of residuals
+                                        single point active alignment method  situation awareness
+single point active alignment method                                1.000000             0.000000
+situation awareness                                                 0.000000             1.000000
+
+

@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     15:49:35
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -1.60954
+Nobs:                     16.0000    HQIC:                  -2.61745
+Log likelihood:          -2.03126    FPE:                   0.128858
+AIC:                     -2.67185    Det(Omega_mle):       0.0452504
+--------------------------------------------------------------------
+Results for equation air traffic control
+====================================================================================================
+                                       coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------------------
+const                                     0.341333         0.343644            0.993           0.321
+L1.air traffic control                   -0.730667         0.527758           -1.384           0.166
+L1.human-automation collaboration        -0.533333         1.170704           -0.456           0.649
+L2.air traffic control                   -0.773333         0.815901           -0.948           0.343
+L2.human-automation collaboration        -2.562667         1.443709           -1.775           0.076
+L3.air traffic control                   -0.429333         1.130818           -0.380           0.704
+L3.human-automation collaboration        -2.693333         1.558149           -1.729           0.084
+L4.air traffic control                    0.874667         1.171564            0.747           0.455
+L4.human-automation collaboration        -0.848000         1.624863           -0.522           0.602
+L5.air traffic control                    0.621333         1.023634            0.607           0.544
+L5.human-automation collaboration        -0.170667         1.296735           -0.132           0.895
+====================================================================================================
+
+Results for equation human-automation collaboration
+====================================================================================================
+                                       coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------------------
+const                                     0.045852         0.126878            0.361           0.718
+L1.air traffic control                    0.327630         0.194856            1.681           0.093
+L1.human-automation collaboration        -0.729630         0.432240           -1.688           0.091
+L2.air traffic control                    0.283704         0.301242            0.942           0.346
+L2.human-automation collaboration        -0.570593         0.533038           -1.070           0.284
+L3.air traffic control                    0.181259         0.417514            0.434           0.664
+L3.human-automation collaboration        -0.109630         0.575291           -0.191           0.849
+L4.air traffic control                    0.247704         0.432558            0.573           0.567
+L4.human-automation collaboration        -0.564000         0.599922           -0.940           0.347
+L5.air traffic control                   -0.469704         0.377940           -1.243           0.214
+L5.human-automation collaboration        -0.647926         0.478773           -1.353           0.176
+====================================================================================================
+
+Correlation matrix of residuals
+                                  air traffic control  human-automation collaboration
+air traffic control                          1.000000                        0.646510
+human-automation collaboration               0.646510                        1.000000
+
+

@@ -1,0 +1,52 @@
+  Summary of Regression Results   
+==================================
+Model:                         VAR
+Method:                        OLS
+Date:           Tue, 07, May, 2024
+Time:                     10:18:51
+--------------------------------------------------------------------
+No. of Equations:         2.00000    BIC:                   -68.6656
+Nobs:                     17.0000    HQIC:                  -69.6367
+Log likelihood:           566.579    FPE:                8.40586e-31
+AIC:                     -69.7439    Det(Omega_mle):     3.09859e-31
+--------------------------------------------------------------------
+Results for equation color print reproduction
+==============================================================================================
+                                 coefficient       std. error           t-stat            prob
+----------------------------------------------------------------------------------------------
+const                               0.142857         0.142857            1.000           0.317
+L1.color print reproduction        -0.142857         0.404061           -0.354           0.724
+L1.computer science                -0.228571         0.878775           -0.260           0.795
+L2.color print reproduction         0.857143         0.404061            2.121           0.034
+L2.computer science                 0.457143         0.830048            0.551           0.582
+L3.color print reproduction         0.000000         0.534522            0.000           1.000
+L3.computer science                -0.142857         1.142857           -0.125           0.901
+L4.color print reproduction        -0.542857         1.773731           -0.306           0.760
+L4.computer science                 0.142857         0.857143            0.167           0.868
+L5.color print reproduction        -0.600000         1.074377           -0.558           0.577
+L5.computer science                -0.142857         0.404061           -0.354           0.724
+==============================================================================================
+
+Results for equation computer science
+===================================================================================================
+                                 coefficient       std. error                t-stat            prob
+---------------------------------------------------------------------------------------------------
+const                              -0.000000         0.000000                -0.278           0.781
+L1.color print reproduction        -0.000000         0.000000                -1.269           0.204
+L1.computer science                 0.000000         0.000000                 0.016           0.987
+L2.color print reproduction        -0.000000         0.000000                -0.410           0.682
+L2.computer science                -1.000000         0.000000  -309183791168626.125           0.000
+L3.color print reproduction         2.000000         0.000000   960249113588255.625           0.000
+L3.computer science                -0.000000         0.000000                -0.050           0.960
+L4.color print reproduction         2.000000         0.000000   289375715345865.000           0.000
+L4.computer science                 0.000000         0.000000                 0.042           0.967
+L5.color print reproduction         1.000000         0.000000   238870894971623.156           0.000
+L5.computer science                -0.000000         0.000000                -0.353           0.724
+===================================================================================================
+
+Correlation matrix of residuals
+                            color print reproduction  computer science
+color print reproduction                    1.000000         -0.000000
+computer science                           -0.000000          1.000000
+
+
